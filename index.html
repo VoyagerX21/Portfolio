@@ -1702,21 +1702,22 @@
         >
           <div class="form-group">
             <label>NAME <span>*</span></label>
-            <input type="text" placeholder="your_name" required />
+            <input type="text" name="name" placeholder="your_name" required />
           </div>
           <div class="form-group">
             <label>EMAIL <span>*</span></label>
-            <input type="email" placeholder="you@example.com" required />
+            <input type="email" email="email" placeholder="you@example.com" required />
           </div>
           <div class="form-group">
             <label>SUBJECT</label>
-            <input type="text" placeholder="# project / opportunity / collab" />
+            <input type="text" name="subject" placeholder="# project / opportunity / collab" />
           </div>
           <div class="form-group">
             <label>MESSAGE <span>*</span></label>
             <textarea
               rows="5"
               placeholder="# write your message here..."
+              name="message"
               required
             ></textarea>
           </div>
