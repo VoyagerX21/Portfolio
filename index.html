@@ -1888,7 +1888,7 @@
         const res = await fetch(`https://lcstalker.khakse.me/KhakseCoder0003/contest/history`);
         const lc_rating = await res.json();
         ps_desc.innerText = `Solved 2000+ problems across LeetCode, Codeforces, and Codechef.
-              Achieved 1494(2*) on Codechef and ${Math.floor([lc_rating.length()-1].rating)} on LeetCode global
+              Achieved 1494(2*) on Codechef and ${Math.floor(lc_rating.contestHistory[lc_rating.contestHistory.length-1].rating)} on LeetCode global
               standings.`
       });
     </script>
