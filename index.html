@@ -1962,8 +1962,10 @@
           `https://lcstalker.khakse.me/KhakseCoder0003/contest/history`,
         );
         const lc_rating = await res.json();
+        const arr = lc_rating.contestHistory;
+        const max = Math.max(...arr.map(obj=>obj.rating));
         ps_desc.innerHTML = `Solved <strong style="color: white">2000+</strong> problems across LeetCode, Codeforces, and Codechef.
-              Achieved <strong style="color: white">1494(2*)</strong> on Codechef and <strong style="color: white">${Math.floor(lc_rating.contestHistory[lc_rating.contestHistory.length - 1].rating)}</strong> on LeetCode global
+              Achieved <strong style="color: white">1494(2*)</strong> on Codechef and <strong style="color: white">${Math.ceil(max)}</strong> on LeetCode global
               standings.`;
         const ps_desc2 = document.getElementsByClassName("ach-desc")[1];
         const res2 = await fetch("https://porfolioserver.khakse.me/downloads");
