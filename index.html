@@ -493,6 +493,11 @@
         color: #5dd6b5;
         background: rgba(0, 217, 163, 0.04);
       }
+      .skill-tag.core {
+        border-color: rgba(139, 146, 165, 0.4);
+        color: var(--dim);
+        background: rgba(139, 146, 165, 0.05);
+      }
 
       .skill-tags {
         display: flex;
@@ -1109,7 +1114,7 @@
     <!-- HERO -->
     <section id="hero">
       <p class="hero-eyebrow">
-        &gt; python_developer / backend_engineer / problem_solver
+        &gt; backend_engineer / distributed_systems / problem_solver
       </p>
       <h1 class="hero-name">
         Init, I'm<br />
@@ -1119,9 +1124,9 @@
         </span>
       </h1>
       <p class="hero-tagline">
-        I build <span class="hl">scalable backend systems</span> and craft
-        <span class="hl">elegant Python</span> solutions.<br />
-        Turning complex problems into clean, efficient code.
+        I build <span class="hl">event-driven backend systems</span> and
+        design <span class="hl">fault-tolerant architectures</span>.<br />
+        Turning complex problems into reliable, scalable code.
       </p>
       <div class="hero-cta">
         <a href="#projects" class="btn btn-primary">→ view work</a>
@@ -1135,18 +1140,18 @@
           <span class="kw">class</span> <span class="fn">Developer</span>:
         </div>
         <div>&nbsp;&nbsp;name = <span class="str">"Gourav Khakse"</span></div>
-        <div>&nbsp;&nbsp;role = <span class="str">"Backend Dev"</span></div>
+        <div>&nbsp;&nbsp;role = <span class="str">"Backend Engineer"</span></div>
         <div>
-          &nbsp;&nbsp;stack = [<span class="str">"Python"</span>,<span
+          &nbsp;&nbsp;stack = [<span class="str">"Node.js"</span>,<span
             class="str"
-            >"Node.js"</span
+            >"Python"</span
           >,
         </div>
         <div>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
             class="str"
-            >"Flask"</span
-          >,<span class="str">"REST APIs"</span>,
+            >"BullMQ"</span
+          >,<span class="str">"Redis"</span>,
         </div>
         <div>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
@@ -1187,19 +1192,21 @@
           The <span>Human</span><br />Behind the Code
         </h2>
         <p class="reveal">
-          I'm a <span class="hl">Python backend developer</span> passionate
-          about building systems that are not just functional — but
-          <span class="hl2">beautifully engineered</span>. I believe good code
-          tells a story.
+          I'm a <span class="hl">backend engineer</span> who cares about
+          systems that stay correct under failure — not just ones that work on
+          the happy path. Queues, retries, idempotency, and
+          <span class="hl2">event-driven architecture</span> are where I spend
+          most of my thinking.
         </p>
         <p class="reveal">
-          When I'm not writing APIs or optimising database queries, you'll find
-          me grinding leetcode problems, contributing to open source, or
-          debugging something that shouldn't have broken.
+          When I'm not building APIs or reasoning about failure modes, you'll
+          find me grinding LeetCode problems, maintaining
+          <span class="hl">pygraphkit</span> on PyPI, or debugging something
+          that shouldn't have broken.
         </p>
         <p class="reveal">
           I'm currently
-          <span class="hl">open to backend engineering roles</span> and
+          <span class="hl">open to backend engineering internships</span> and
           interesting open source collaborations.
         </p>
         <div class="about-socials reveal">
@@ -1372,6 +1379,7 @@
             <span class="skill-tag backend">Node.js</span>
             <span class="skill-tag backend">Express.js</span>
             <span class="skill-tag backend">Flask</span>
+            <span class="skill-tag backend">BullMQ</span>
             <span class="skill-tag backend">REST APIs</span>
             <span class="skill-tag backend">Webhooks</span>
             <span class="skill-tag backend">Event-Driven Systems</span>
@@ -1395,7 +1403,9 @@
           </div>
           <div class="skill-items">
             <span class="skill-tag db">MongoDB</span>
+            <span class="skill-tag db">Redis</span>
             <span class="skill-tag db">MySQL</span>
+            <span class="skill-tag db">SQLite</span>
           </div>
         </div>
 
@@ -1406,6 +1416,7 @@
           </div>
           <div class="skill-items">
             <span class="skill-tag sec">HMAC-SHA256</span>
+            <span class="skill-tag sec">OAuth 2.0</span>
             <span class="skill-tag sec">API Authentication</span>
           </div>
         </div>
@@ -1418,12 +1429,25 @@
           <div class="skill-items">
             <span class="skill-tag devops">Git</span>
             <span class="skill-tag devops">GitHub</span>
+            <span class="skill-tag devops">Docker</span>
+            <span class="skill-tag devops">Docker Compose</span>
             <span class="skill-tag devops">Postman</span>
-            <span class="skill-tag devops">Swagger (OpenAPI)</span>
-            <span class="skill-tag devops">Cron Jobs</span>
             <span class="skill-tag devops">Linux</span>
-            <span class="skill-tag devops">Slack</span>
-            <span class="skill-tag devops">Vercel</span>
+            <span class="skill-tag devops">Azure VMs</span>
+          </div>
+        </div>
+
+        <div class="skill-row">
+          <div class="skill-category">
+            <span class="skill-category-icon">📚</span>
+            <span class="skill-category-name">Core Subjects</span>
+          </div>
+          <div class="skill-items">
+            <span class="skill-tag core">Data Structures & Algorithms</span>
+            <span class="skill-tag core">OOP</span>
+            <span class="skill-tag core">Operating Systems</span>
+            <span class="skill-tag core">DBMS</span>
+            <span class="skill-tag core">Computer Networks</span>
           </div>
         </div>
 
@@ -1457,8 +1481,8 @@
           <div class="project-header">
             <div class="project-title">Pipeline-Hub</div>
             <div class="project-desc">
-              # Developed a secure, webhook-based CI/CD orchestration system
-              with multi-platform support
+              # Multi-tenant, event-driven CI/CD orchestration platform with
+              queue-based build execution
             </div>
           </div>
           <div class="project-body">
@@ -1470,21 +1494,24 @@
                 line-height: 1.8;
               "
             >
-              Built a webhook-driven CI/CD orchestration system supporting
-              GitHub, GitLab, and Bitbucket. Secured webhooks using HMAC-SHA256
-              verification, designed REST APIs with MongoDB for pipeline
-              tracking, and integrated Slack notifications. Improved reliability
-              using Docker and retry mechanisms.
+              Built a multi-tenant CI/CD orchestration platform integrating
+              GitHub, GitLab, and Bitbucket. Designed a fault-tolerant,
+              event-driven architecture that decouples webhook ingestion from
+              CI execution using dedicated BullMQ workers backed by Redis.
+              Enforced per-repository HMAC-SHA256 secrets via automated OAuth
+              provisioning, and implemented at-least-once, idempotent job
+              processing with exponential backoff for reliable Slack
+              notifications and outbound webhook delivery.
             </p>
             <div class="skill-tags" style="margin-top: 1rem">
               <span class="tag py">Node.js</span>
-              <span class="tag py">Webhooks</span>
-              <span class="tag py">CI/CD</span>
-              <span class="tag py">Docker</span>
+              <span class="tag py">BullMQ</span>
+              <span class="tag py">Redis</span>
               <span class="tag py">MongoDB</span>
-              <span class="tag py">REST API</span>
+              <span class="tag py">Webhooks</span>
+              <span class="tag py">Event-Driven</span>
               <span class="tag py">HMAC-SHA256</span>
-              <span class="tag py">Slack API</span>
+              <span class="tag py">OAuth 2.0</span>
             </div>
           </div>
           <div class="project-links">
@@ -1526,8 +1553,8 @@
           <div class="project-header">
             <div class="project-title">GetEasy-Aid</div>
             <div class="project-desc">
-              # Built a React + Flask app that automates Coursera financial-aid
-              responses using web scraping and Gemini AI
+              # Full-stack tool automating Coursera financial-aid responses
+              using scraped course metadata and Gemini AI
             </div>
           </div>
           <div class="project-body">
@@ -1539,21 +1566,23 @@
                 line-height: 1.8;
               "
             >
-              Developed a full-stack ReactJS and Flask application to automate
-              Coursera financial-aid responses, reducing manual effort by ~80%.
-              Built a Flask REST API and interactive React frontend with
-              optimized search and suggestions. Implemented BeautifulSoup
-              scraping to extract metadata from 6,646+ courses and generated
-              context-aware AI responses using the Gemini API.
+              Architected and deployed a cloud-hosted backend on Azure that
+              automates Coursera financial-aid applications end to end.
+              Orchestrated asynchronous processing pipelines using background
+              workers and state tracking to isolate client-facing APIs from
+              compute-heavy AI generation. Built a scraping and caching layer
+              over a SQLite-backed catalog of 6,600+ courses, and integrated
+              the Gemini API with structured, context-aware prompt-generation
+              workflows.
             </p>
             <div class="skill-tags" style="margin-top: 1rem">
               <span class="tag py">React.js</span>
               <span class="tag py">Flask</span>
+              <span class="tag py">SQLite</span>
               <span class="tag py">REST API</span>
               <span class="tag py">BeautifulSoup</span>
-              <span class="tag py">Web Scraping</span>
               <span class="tag py">Google Gemini API</span>
-              <span class="tag py">Python</span>
+              <span class="tag py">Azure</span>
             </div>
           </div>
           <div class="project-links">
@@ -1736,7 +1765,7 @@
         <h2 class="sec-title">Let's <span>Build</span> Together</h2>
         <p>
           Have an interesting project, opportunity, or just want to talk
-          Python?<br />My inbox is always open.
+          backend systems?<br />My inbox is always open.
         </p>
 
         <form
@@ -1802,7 +1831,7 @@
 
     <!-- FOOTER -->
     <footer>
-      <p>Built with <span>Python love</span>·</p>
+      <p>Built with <span>backend love</span>·</p>
       <p
         style="
           font-family: &quot;JetBrains Mono&quot;, monospace;
