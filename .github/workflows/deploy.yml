@@ -50,6 +50,8 @@ jobs:
             docker compose pull
             docker compose up -d
 
+            sleep 3
+
             curl --fail http://127.0.0.1:3002
 
             echo "Portfolio deployed successfully."
